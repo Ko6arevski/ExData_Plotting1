@@ -13,7 +13,7 @@ plot(subframe$DateTime, subframe$Sub_metering_1, type="n",
 lines(subframe$DateTime, subframe$Sub_metering_1, col="black")
 lines(subframe$DateTime, subframe$Sub_metering_2, col="red")
 lines(subframe$DateTime, subframe$Sub_metering_3, col="blue")
-legend("topright",lty="solid", col = c("black","red","blue"), legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
+legend("topright",lty="solid", bty="n",  col = c("black","red","blue"), legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
 
 plot(subframe$DateTime, subframe$Voltage, type="l", 
      ylab = "Voltage", xlab="datetime")
